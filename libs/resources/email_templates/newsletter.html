@@ -1,0 +1,181 @@
+<html>
+	<body style="background:#fff; min-height:1000px; color:#333;font-family:Arial, Helvetica, sans-serif; 
+        font-size:12px; margin:0; padding:0;" alink="#FF0000" link="#FF0000" bgcolor="#fff" text="#333">
+        <div bgcolor="#F1F1F1" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+            <!-- container -> border -->
+            <table cellspacing="0" border="0" width="700" align="center" style="border-collapse: collapse;">
+                <tbody>
+					<tr>
+					   <td align="center" style="font-size:8pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">
+						  <p>You're receiving this newsletter because you SIGNED UP AT <a href="http://www.operationbraveheart.org.uk">operationbraveheart.org.uk</a>.</p>
+						  <p>Not interested anymore? <a href="http://www.operationbraveheart.org.uk/php/unsubscribe/{email}">Unsubscribe Instantly</a>.  Having trouble reading this email? <a href="http://www.operationbraveheart.org.uk/newsletter/{id}">View it in your browser</a>.</p>
+						  <br>
+					   </td>
+					</tr>
+					<tr>
+						<td>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid; #000000;">
+								<tr>
+									<td height="117" valign="bottom" align="left" class="header">
+										<a href="http://www.operationbraveheart.org.uk/"><img src="http://www.operationbraveheart.org.uk/images/newsletter/layout/banner.jpg" width="580" height="117" border=0"" alt="Operation Braveheart" title="Operation Braveheart" /></a>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<table width="100%" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="right" style="padding: 3px;font-weight: bold; font-size:12pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;"><p>{date}</p></td>
+											</tr>
+											<tr>
+												<td style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">
+													<p><b>Hello {name}</b></p>
+													<p>{welcome}</p>
+													<br>
+												</td>
+											</tr>
+											<tr align="left" valign="top">
+												<td width="550" valign="top" align="left" style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">	
+													<table cellspacing="0" cellpadding="4">
+														<tr>
+															<td style="color: #ff891a;font-family: Arial, Verdana, Times, sans-serif;">
+																<h2 style=" margin: 0; font-size: 12pt;">{article1_title}</h2>
+															</td>
+														</tr>
+														<tr>
+															<td style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">{article1}</td>
+														</tr>';
+												if(!empty($data['article1_link'])) {
+													$HTML.='
+														<tr>
+															<td align="right" style="font-size:9pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;"><a href="{article1_link}">Read More...</a></td>
+														</tr>';
+												}
+												$HTML.='
+													</table>
+													<br>
+													<img src="http://www.operationbraveheart.org.uk/images/newsletter/layout/hr-big.gif" width="550" height="27" />';
+													if(!empty($data['article2'])) {
+														$HTML.='
+														<table cellspacing="0" cellpadding="4">
+															<tr>
+																<td style="color: #ff891a;font-family: Arial, Verdana, Times, sans-serif;">
+																	<h2 style=" margin: 0; font-size: 12pt;">{article2_title}</h2>
+																</td>
+															</tr>
+															<tr>
+																<td style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">{article2}</td>
+															</tr>';
+													if(!empty($data['article2_link'])) {
+														$HTML.='
+															<tr>
+																<td align="right" style="font-size:9pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;"><a href="{article2_link}">Read More...</a></td>
+															</tr>';
+													}
+												$HTML.='
+														</table>
+														<br>
+														<img src="http://www.operationbraveheart.org.uk/images/newsletter/layout/hr-big.gif" width="550" height="27" />';
+													}
+													if(!empty($data['article3'])) {
+														$HTML.='
+														<table cellspacing="0" cellpadding="4">
+															<tr>
+																<td style="color: #ff891a;font-family: Arial, Verdana, Times, sans-serif;">
+																	<h2 style=" margin: 0; font-size: 12pt;">{article3_title}</h2>
+																</td>
+															</tr>
+															<tr>
+																<td style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">{article3}</td>
+															</tr>';
+													if(!empty($data['article3_link'])) {
+														$HTML.='
+															<tr>
+																<td align="right" style="font-size:9pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;"><a href="{article3_link}">Read More...</a></td>
+															</tr>';
+													}
+												$HTML.='
+														</table>
+														<br>
+														<img src="http://www.operationbraveheart.org.uk/images/newsletter/layout/hr-big.gif" width="550" height="27" />';
+													}
+													if(!empty($data['article4'])) {
+														$HTML.='
+														<table cellspacing="0" cellpadding="4">
+															<tr>
+																<td style="color: #ff891a;font-family: Arial, Verdana, Times, sans-serif;">
+																	<h2 style=" margin: 0; font-size: 12pt;">{article4_title}</h2>
+																</td>
+															</tr>
+															<tr>
+																<td style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">{article4}</td>
+															</tr>';
+													if(!empty($data['article4_link'])) {
+														$HTML.='
+															<tr>
+																<td align="right" style="font-size:9pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;"><a href="{article4_link}">Read More...</a></td>
+															</tr>';
+													}
+												$HTML.='
+														</table>
+														<br>
+														<img src="http://www.operationbraveheart.org.uk/images/newsletter/layout/hr-big.gif" width="550" height="27" />';
+													}
+													if(!empty($data['article5'])) {
+														$HTML.='
+														<table cellspacing="0" cellpadding="4">
+															<tr>
+																<td style="color: #ff891a;font-family: Arial, Verdana, Times, sans-serif;">
+																	<h2 style=" margin: 0; font-size: 12pt;">{article5_title}</h2>
+																</td>
+															</tr>
+															<tr>
+																<td style="font-size:10pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">{article5}</td>
+															</tr>';
+													if(!empty($data['article5_link'])) {
+														$HTML.='
+															<tr>
+																<td align="right" style="font-size:9pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;"><a href="{article5_link}">Read More...</a></td>
+															</tr>';
+													}
+												$HTML.='
+														</table>
+														<br>
+														<img src="http://www.operationbraveheart.org.uk/images/newsletter/layout/hr-big.gif" width="550" height="27" />';
+													}
+												$HTML.='
+											</td>
+										 </tr>
+									  </table>
+								   </td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" height="30" background="http://www.operationbraveheart.org.uk/images/layout/footer-bg.gif">
+							<div style="font-size:8pt;color: #fff;font-family: Arial, Verdana, sans-serif;text-align: center;padding:3px;">
+								<ul style="	list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:0;">
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk">Home</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/contact-us">Contact Us</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/news/">News</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/events/">Events</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/blogs/">Blogs</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/poems/">Poems</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/sponsors/">Supporters</a></li>
+									<li style="display:inline;margin:0;padding:0px 10px;text-align:center;"><a style="color:#FFFFFF" href="http://www.operationbraveheart.org.uk/guestbook/">Guestbook</a></li>
+								</ul>
+								<p style="margin:0">Copyright &copy; 2008 Operation Braveheart. All Rights Reserved.</p>
+							</div>
+						<td>
+					</tr>
+					<tr>
+					   <td align="center" style="font-size:8pt; font-family: Arial, Verdana, Times, sans-serif; margin: 0;">
+						  <p>Not interested anymore? <a href="http://www.operationbraveheart.org.uk/php/unsubscribe/{email}">Unsubscribe Instantly</a>.  Visit us at <a href="http://www.operationbraveheart.org.uk">www.operationbraveheart.org.uk</a></p>
+						  <p>Operation Braveheart, 82 New Street, Cullompton, Devon, EX15 1HD</p>
+					   </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

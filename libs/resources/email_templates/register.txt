@@ -1,0 +1,18 @@
+Dear {first_name},
+ 
+Thank you for registering at our website, <a href="http://www.operationbraveheart.org.uk">http://www.operationbraveheart.org.uk</a>! 
+	 
+You are one step away from logging in and accessing our exclusive members area. 
+	
+To activate your membership, please click here: <a href="http://www.operationbraveheart.org.uk/register/activate/{userid}/{code}">http://www.operationbraveheart.org.uk/register/activate/{userid}/{code}</a>
+	 
+Once you activate your memebership, you will be able to login with the following information: 
+
+Username: {username}
+Password: {password}
+
+Many Thanks!
+
+The Operation Braveheart admin team. 
+	 
+This is an automated response, please do not reply!

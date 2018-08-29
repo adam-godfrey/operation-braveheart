@@ -1,0 +1,16 @@
+Hi {username}
+
+As requested we can confirm your login details have been updated. 
+
+Please use the below password and relevant email address to access your online account.
+  
+New Password: {temp_pass} 
+
+Once logged in you can change your password 
+	 
+Thanks! 
+
+operationbraveheart.org.uk webmaster
+
+
+This is an automated response, please do not reply!"; 
